@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Box</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>The Box</h1>
+    </div>
+
+    <div id="content">
+        <div id="box">
+            <h3>Box Dimensions</h3>
+            <form action="">
+                <label for="high">High</label>
+                <input id="high" min="0" type="number">
+                <br>
+                <label for="length">Length</label>
+                <input id="length" min="0" type="number">
+                <br>
+                <label for="width">Width</label>
+                <input id="width" min="0" type="number">
+            </form>
+        </div>
+
+        <div id="cube">
+            <h3>Cube Dimensions</h3>
+            <form action="">
+                <label for="s">Side</label>
+                <input id="side" min="0" type="number">
+            </form>
+            <img src="/the-box/img/box.png" alt="">
+        </div>
+    </div>
+
+    <input id="square" onclick="myFunction()" type="submit" value="Submit">
+
+    <h3>Result</h3>
+
+    <div id="result">
+        
+        <p id="one"></p>
+         <div id="solution">
+            <p id="two"></p>
+         </div>
+
+    </div>
+    <script src="/the-box/app.js"></script>
+</body>
+
+</html>
